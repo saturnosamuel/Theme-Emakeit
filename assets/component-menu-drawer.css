@@ -31,8 +31,8 @@ menu-drawer > details[open] > summary::before {
   visibility: hidden;
   z-index: 3;
   left: 0;
-  top: 100%;
-  width: 100%;
+  top: 0%;
+  width: 65%;
   padding: 0;
   background-color: rgb(var(--color-background));
   overflow-x: hidden;
@@ -43,7 +43,7 @@ menu-drawer > details[open] > summary::before {
 }
 
 .js .menu-drawer {
-  height: calc(100vh - 100%);
+  height: 100vh !important;
   height: calc(var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%)));
 }
 
@@ -90,7 +90,8 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__navigation {
-  padding: 3rem 0;
+  padding: 0rem 0 10px 0;
+  background-color: #E6E6E6;
 }
 
 .menu-drawer__inner-submenu {
@@ -141,7 +142,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   right: 3rem;
 }
 
-.menu-drawer__menu-item--active,
+/* .menu-drawer__menu-item--active, */
 .menu-drawer__menu-item:focus,
 .menu-drawer__close-button:focus,
 .menu-drawer__menu-item:hover,

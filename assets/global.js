@@ -1254,3 +1254,18 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+// New JS Custom
+
+const iconClose = document.querySelector(".icon-close-mobile");
+const details = document.querySelector("#Details-menu-drawer-container")
+const summary = document.querySelector("#Details-menu-drawer-container > summary")
+const body = document.querySelector("body")
+const headerMobile = document.querySelector("#shopify-section-sections--20382400839961__header > sticky-header > header")
+
+iconClose.addEventListener("click", () => {
+    details.classList.remove("menu-opening");
+    details.removeAttribute('open')
+    summary.setAttribute("aria-expanded", false);
+    body.classList.remove("overflow-hidden-tablet");
+})
